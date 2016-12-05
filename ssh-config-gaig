@@ -1,0 +1,17 @@
+Host d11
+     HostName cvglddocker11.td.afg
+
+Host d12
+     HostName cvglddocker12.td.afg
+
+Host d13
+     HostName cvglddocker13.td.afg
+
+Host becky
+     HostName 10.54.12.52
+
+Host home
+     HostName cvg-0002120-506.ga.afginc.com
+
+Host bunch
+     HostName cvg-0002120-505.ga.afginc.com
