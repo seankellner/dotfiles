@@ -1,0 +1,47 @@
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/skellner/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[user]
+	name = Kellner, Sean
+	email = skellner@GAIG.COM
+[alias]
+	out      = !git fetch && git log FETCH_HEAD..
+	in       = !git fetch && git log ..FETCH_HEAD
+	webui = !/Users/skellner/ThirdParty/git-webui/release/libexec/git-core/git-webui
+	orphanl = !git log --pretty=oneline --abbrev-commit --graph --decorate `git reflog | cut -d " " -f 1`
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[push]
+	default = simple
+[url "https://"]
+	insteadOf = git://
+[webui]
+	autoupdate = true
+[color]
+	ui = auto
+[advice]
+	statusHints = false
+[branch]
+	autosetupmerge = true
+[commit]
+	template = /Users/skellner/.stCommitMsg
