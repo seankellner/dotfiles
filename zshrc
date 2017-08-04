@@ -7,7 +7,7 @@ alias emacs="emacs -nw"
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
-export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/opt/node@6/bin:/usr/local/sbin:$PATH
 
 #unsetopt share_history
 #setopt no_share_history
@@ -51,11 +51,10 @@ antigen bundle ant
 antigen bundle brew
 antigen bundle brew-cask
 antigen bundle common-aliases
-antigen-bundle docker
+antigen bundle docker
 antigen bundle gradle
 antigen bundle mvn
 antigen bundle node
-antigen bundle npm
 antigen bundle osx
 antigen bundle perl
 antigen bundle rimraf/k
