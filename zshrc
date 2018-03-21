@@ -1,6 +1,17 @@
 alias j6='export JAVA_HOME=`/usr/libexec/java_home -v 1.6`'
 alias j7='export JAVA_HOME=`/usr/libexec/java_home -v 1.7`'
 alias j8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8`'
+alias dock1='DOCKER_HOST=localhost:6001 docker'
+alias dock2='DOCKER_HOST=localhost:6002 docker'
+alias dock11='DOCKER_HOST=localhost:6011 docker'
+alias dock12='DOCKER_HOST=localhost:6012 docker'
+alias dock13='DOCKER_HOST=localhost:6013 docker'
+alias dock14='DOCKER_HOST=localhost:6014 docker'
+alias dock15='DOCKER_HOST=localhost:6015 docker'
+alias dock16='DOCKER_HOST=localhost:6016 docker'
+alias dock17='DOCKER_HOST=localhost:6017 docker'
+alias dock18='DOCKER_HOST=localhost:6018 docker'
+alias dock19='DOCKER_HOST=localhost:6019 docker'
 
 alias cdu='cd-gitroot'
 alias emacs="emacs -nw"
@@ -69,5 +80,5 @@ bindkey '^[[B' down-line-or-local-history   # Cursor down
 antigen apply
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
+export ENV_LEVEL=DEV
 
